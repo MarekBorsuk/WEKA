@@ -5,7 +5,9 @@ var myCtrls = angular.module( 'myCtrls' , [ 'ngRoute' ] );
 
 myCtrls.controller( 'navigation' , [ '$scope' , '$location' , function( $scope , $location ){
 
-	console.log($location.path());
+	//if($location.path() == "")
+	//console.log();
+
 	$scope.isActive = function ( path ) {
 		return $location.path() === path;
 	};

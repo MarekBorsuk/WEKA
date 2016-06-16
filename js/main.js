@@ -20,8 +20,9 @@ main.config(['$routeProvider', '$httpProvider', function($routeProvider, $httpPr
 		//controller : 'about',
 		templateUrl : 'view/about.html'
 	});	
-	$routeProvider.otherwise({
-		redirectTo : '/home'
+	$routeProvider.when('/home', {
+		//redirectTo : '/home',
+		templateUrl : 'view/process.html'
 	});	
 
 }]);
